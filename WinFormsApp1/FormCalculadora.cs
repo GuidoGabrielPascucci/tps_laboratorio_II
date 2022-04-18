@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 using Entidades;
 
-namespace WinFormsApp1
+namespace MiCalculadora
 {
     public partial class FormCalculadora : Form
     {

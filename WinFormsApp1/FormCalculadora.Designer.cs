@@ -1,5 +1,5 @@
 ﻿
-namespace WinFormsApp1
+namespace MiCalculadora
 {
     partial class FormCalculadora
     {
