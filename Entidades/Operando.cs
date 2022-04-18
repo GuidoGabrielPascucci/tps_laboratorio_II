@@ -20,6 +20,7 @@ namespace Entidades
             this.numero = numero;
         }
 
+        // wfwfwfwf
 
         /// <summary>
         /// CONSTRUCTOR de la clase Operando. Sin parámetros, invoca al constructor que recibe un double y le pasa 0 como valor.  
@@ -110,6 +111,11 @@ namespace Entidades
         }
 
 
+        /// <summary>
+        /// Convierte un número binario en su equivalente en decimal.
+        /// </summary>
+        /// <param name="binario">numero de tipo STRING</param>
+        /// <returns>el resultado de la conversión (número decimal) o "Valor inválido" si el numero no es binario</returns>
         public string BinarioDecimal(string binario)
         {
             string result = "Valor inválido";
@@ -136,13 +142,22 @@ namespace Entidades
         }
 
 
-
+        /// <summary>
+        /// Invoca la sobrecarga del mismo método convirtiendo el parámetro de string a double para que realiza la conversión.
+        /// </summary>
+        /// <param name="numero">un número de tipo STRING</param>
+        /// <returns>el resultado de la conversión realizada por la sobrecarga de este método</returns>
         public string DecimalBinario(string numero)
         {
             return DecimalBinario(Convert.ToDouble(numero));
         }
 
 
+        /// <summary>
+        /// Convierte un número decimal en su equivalente en binario.
+        /// </summary>
+        /// <param name="numero">un numero de tipo DOUBLE</param>
+        /// <returns>el resultado de la conversión (número binario)</returns>
         public string DecimalBinario(double numero)
         {
             string valorBinario = string.Empty;
