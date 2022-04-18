@@ -20,7 +20,6 @@ namespace Entidades
             this.numero = numero;
         }
 
-        // wfwfwfwf
 
         /// <summary>
         /// CONSTRUCTOR de la clase Operando. Sin parámetros, invoca al constructor que recibe un double y le pasa 0 como valor.  

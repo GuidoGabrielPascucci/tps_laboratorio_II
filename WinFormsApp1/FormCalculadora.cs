@@ -22,6 +22,7 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
+
         /// <summary>
         /// EVENTO CLICK del btn Operar. Toma los inputs y los usa para realizar la operación indicada por el usuario. 
         /// </summary>
@@ -71,6 +72,7 @@ namespace WinFormsApp1
             }
         }
 
+
         /// <summary>
         /// Crea las instancias que usará el método Calculadora.Operar y lo invoca
         /// </summary>
@@ -88,6 +90,7 @@ namespace WinFormsApp1
 
             return result;
         }
+
 
         /// <summary>
         /// EVENTO CLICK del btn Convertir A Binario. Valida que se pueda realizar la operación de conversión
@@ -126,6 +129,7 @@ namespace WinFormsApp1
             }
         }
 
+
         /// <summary>
         /// EVENTO CLICK del btn Convertir A Decimal. Valida que se pueda realizar la operación de conversión
         /// del resultado en binario a número decimal y lo muestra en el label Resultado. En caso de error muestra
@@ -163,6 +167,7 @@ namespace WinFormsApp1
             }
         }
 
+
         /// <summary>
         /// Limpia los text-boxes, label y combo-box
         /// </summary>
@@ -174,6 +179,7 @@ namespace WinFormsApp1
             cmbOperador.SelectedIndex = -1;
         }
 
+
         /// <summary>
         /// EVENTO CLICK del btn Limpiar. Invoca al método Limpiar() de la clase.
         /// </summary>
@@ -183,6 +189,7 @@ namespace WinFormsApp1
         {
             this.Limpiar();
         }
+
 
         /// <summary>
         /// EVENTO LOAD. Invoca al método Limpiar() de la clase.
@@ -194,6 +201,7 @@ namespace WinFormsApp1
             this.Limpiar();
         }
 
+
         /// <summary>
         /// EVENTO CLICK del btn Cerrar. Invoca el método Close() para cerrar el formulario.
         /// </summary>
@@ -203,6 +211,7 @@ namespace WinFormsApp1
         {
             this.Close();
         }
+
 
         /// <summary>
         /// EVENTO FORMCLOSING. Cierra el formulario previa validación del usuario.
@@ -216,6 +225,5 @@ namespace WinFormsApp1
             if (choice != DialogResult.Yes)
                 e.Cancel = true;
         }
-
     }
 }
